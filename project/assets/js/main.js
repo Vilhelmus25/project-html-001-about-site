@@ -47,3 +47,17 @@ function startApp($) {
 $(document).ready(function () {
 	startApp(jQuery);
 });
+
+let orderForm = document.querySelector("#orderForm");
+orderForm.addEventListener("submit", function (ev) {  // azért kell az ev, különben a függvény megadja magának paraméterként magát az eseményt, ezt meglőzve
+	ev.preventDefault();    // hogy ne az alapértelmezett működés menjen végbe
+
+
+	let inputs = this.querySelectorAll("input");
+	let values = {};
+	for (let i = 0; i < inputs.length; i++) {
+		values[inputs[i].name] = inputs[i].value;
+	}
+
+	console.log(values);
+    // ez azért jó, mert úgy tudok küldeni adatokat a szervernek, hogy nem frissül le az oldalam.
