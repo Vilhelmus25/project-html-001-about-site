@@ -228,7 +228,7 @@ strong, b {
   color: #555555; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: hsl(330, 99%, 50%); }
+  color:#e90363; }
 
 blockquote {
   border-left-color: rgba(0, 0, 0, 0.25); }
@@ -2955,6 +2955,13 @@ header{
   height: 4em;
   font-size: large;
 }
+
+#header-container{
+  text-align: center;
+  margin-top: 4rem;
+    max-width: 100%;
+
+}
 header.logo{
   font-size: x-large;
   color: #cb01fd;
@@ -3033,12 +3040,7 @@ margin: 1%;
 
 }
 
-#gallery-header{
-  text-align: center;
-  margin-top: 4rem;
-    max-width: 100%;
 
-}
 
 @media screen and (max-width:576px){
   .behavior-box{
