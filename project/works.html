@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> !-->
 </head>
 
 <body>
@@ -30,48 +30,48 @@
 
 
     <main>
-        <h2>Munkáim:</h2>
-        <section>
-            <article>
-                <table id="myTable">
-                    <tbody>
-                        <tr>
-                            <td><img src="images/Personal_tactical.jpg" alt="Personal_tactical Knife"></td>
-                            <td>
-                                <p>Ez egy kész taktikai kés megrendelésre</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-        </section>
-        <section>
-            <article>
-                <table id="myTable">
-                    <tbody>
-                        <tr>
-                            <td><img src="images/Tactical_raw.jpg" alt="Tactical_raw Knife"></td>
-                            <td>
-                                <p>Túlélő kés, markolat nélkül jelenleg, apró javítások végett.</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-        </section>
-        <section>
-            <article>
-                <table id="myTable">
-                    <tbody>
-                        <tr>
-                            <td><img src="images/Kitchen.jpg" alt="Kitchen knife"></td>
-                            <td>
-                                <p>Rendelésre készült japán beütésű konyhakés.</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+        <section class="wrapper">
+            <div>
+                <header>
+                    <h2>Munkáim:</h2>
+                </header>
+
+
+
+
+                <section>
+
+                    <div class="img-float">
+                        <img src="images/Personal_tactical.jpg" alt="Personal_tactical Knife">
+                        <span class="works-font">Ez egy kész taktikai kés megrendelésre, speciális műanyagkompozit
+                            markolattal</span>
+                    </div>
+
+
+                </section>
+
+                <section>
+
+                    <div class="img-float">
+                        <img src="images/Tactical_raw.jpg" alt="Tactical_raw Knife">
+                        <span class="works-font">Túlélő kés, markolat nélkül jelenleg, apró javítások végett.</span>
+                    </div>
+
+
+
+                </section>
+
+
+                <section>
+
+                    <div class="img-float">
+                        <img src="images/Kitchen.jpg" alt="Kitchen knife">
+                        <span class="works-font">Rendelésre készült japán beütésű konyhakés.</span>
+                    </div>
+
+                </section>
+            </div>
+
         </section>
 
     </main>
@@ -88,7 +88,7 @@
     </footer>
 
     <script>
-
+        // a gomb srciptje
         var mybutton = document.getElementById("myBtn");
 
         window.onscroll = function () { scrollFunction() };
