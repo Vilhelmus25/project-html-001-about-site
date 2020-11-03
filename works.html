@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a class="logo" href="index.html">
+            Cybertek
+        </a>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="works.html">Works</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="about.html">About</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <header id="header-container">
+            <h2>Munkáim</h2>
+        </header>
+
+        <section id="works-section">
+            <article>
+                <img src="images/Personal_tactical.jpg" alt="Personal_tactical Knife">
+                <div class="right-content">
+                    <p>
+                        Ez egy kész taktikai kés megrendelésre, speciális műanyagkompozit
+                        markolattal
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <img src="images/Tactical_raw.jpg" alt="Tactical_raw Knife">
+                <div class="right-content">
+                    <p>
+                        Túlélő kés, markolat nélkül jelenleg, apró javítások végett.
+                    </p>
+                </div>
+
+            </article>
+
+            <article>
+                <img src="images/Kitchen.jpg" alt="Kitchen knife">
+                <div class="right-content">
+                    <p>
+                        Rendelésre készült japán beütésű konyhakés.</span>
+                    </p>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <button class="inner" onClick="topFunction()" id="myBtn" title="Go to top">Ugrás a lap tetejére</button>
+    </footer>
+
+    <script>
+        // a gomb srciptje
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
