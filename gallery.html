@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a class="logo" href="index.html">
+            Cybertek
+        </a>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="works.html">Works</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="about.html">About</a>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="gallery-container">
+
+            <header id="header-container">
+                <h2>Néhány referenciakép</h2>
+            </header>
+
+
+            <img src="images/BokerKalashnikov.jpg" alt="isAKnife" />
+            <img src="images/buck-pathfinder-black.jpg" alt="isAKnife" />
+            <img src="images/coldsteel-Chef.jpg" alt="isAKnife" />
+
+            <img src="images/ColdSteel.jpg" alt="isAKnife" />
+            <img src="images/CRKT_Obake.jpg" alt="isAKnife" />
+            <img src="images/gerber-mark-ii-double.jpg" alt="isAKnife" />
+
+
+            <img src="images/Gerber-Survival.jpg" alt="isAKnife" />
+            <img src="images/Grindworx-Bone-Hunter-damascus.jpg" alt="isAKnife" />
+            <img src="images/Grindworx-Mini-Hunter-Stag-Bone-Wood-Damascus.jpg" alt="isAKnife" />
+
+            <img src="images/Ka-BarBowie.jpg" alt="isAKnife" />
+            <img src="images/Kershaw-Tone-BHQ.jpg" alt="isAKnife" />
+            <img src="images/Kobun.jpg" alt="isAKnife" />
+
+            <img src="images/KukriMachete.jpg" alt="isAKnife" />
+            <img src="images/Morakniv-Garberg-Multi-Mount-Sheath.jpg" alt="isAKnife" />
+            <img src="images/Obake.jpg" alt="isAKnife" />
+
+            <img src="images/Ontario.jpg" alt="isAKnife" />
+            <img src="images/OTFSpring.jpg" alt="isAKnife" />
+            <img src="images/Smith&WessonDagger.jpg" alt="isAKnife" />
+
+            <img src="images/SOG-Seal-Pup-Elite.jpg" alt="isAKnife" />
+            <img src="images/sog-seal-strike.jpg" alt="isAKnife" />
+            <img src="images/Tanto.jpg" alt="isAKnife" />
+
+
+            <img src="images/ThrowingSet.jpg" alt="isAKnife" />
+            <img src="images/tops-rangers-edge.jpg" alt="isAKnife" />
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <button class=" inner" onClick="topFunction()" id="myBtn" title="Go to top">Ugrás a lap tetejére</button>
+    </footer>
+
+    <script>
+        // a gomb srciptje
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+
+</html>
